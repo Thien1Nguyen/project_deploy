@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive !important;
+}
+
+body{
+    background-image: url('/static/img/wood_background.png');
+}
+.paperBg{
+    background-color: rgb(236, 231, 213);
+}
+.boxShadow{
+    box-shadow:10px 15px 10px black;
+}
+
+.gap-400px{
+    gap: 400px;
+}
+
+.logo{
+    width: 40px;
+    padding-bottom: 6px;
+}
+
+.maroonBg{
+    background-color: maroon !important;
+}
+
+.maroonText{
+    color: maroon;
+}
+.greyText{
+    color: rgb(0, 9, 49);
+}
+.box:hover{
+    background-color: rgb(218, 211, 188);
+}
+.borderColorMaroon{
+    border-color: maroon !important;
+}

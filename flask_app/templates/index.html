@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+    </style>
+    <link rel="stylesheet" href="{{url_for('static', filename ='/css/main_page.css')}}">
+
+    <title>Pho Gia Long</title>
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3 fs-5 themeBGColor navBorder">
+        <div class="container-fluid themeBGColor maroonText">
+            <a class="d-flex navbar-brand align-items-end" href="#home">
+                <img src="{{url_for('static', filename ='/img/logo2.png')}}" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navSpacing font-weight-bold" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 ">
+                    <li class="nav-item me-5">
+                        <a class="nav-link greyText" href="#about_us">About Us</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link greyText" href="#location">Location</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link maroonText" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--HOME SECTION-->
+    <section class="home__section d-flex align-content-center align-items-center" id="home">
+        <div class="home__container container d-flex grid justify-content-center align-items-center gap-5">
+            <div class="home__data">
+                <h1 class="home__tile">
+                    Welcome To Pho Gia Long!
+                </h1>
+
+                <p class="home__decription">
+                    Where nothing beats home cooking
+                </p>
+                <a href="https://www.doordash.com/store/pho-gia-long-orange-727327/?event_type=autocomplete&pickup=false"
+                    class="home__btn">Order Now ➡</a>
+            </div>
+            <img src="{{url_for('static', filename ='/img/pho_hero.png')}}" alt="hero img" class="hero">
+        </div>
+    </section>
+
+    <!--ABOUT US-->
+    <section class="home__section d-flex align-content-center align-items-center" id="about_us">
+        <div class="home__container container d-flex grid justify-content-center align-items-center gap-5">
+            <img src="{{url_for('static', filename ='/img/egg_rolls.jpg')}}" alt="hero img" class="hero">
+            <div class="home__data">
+                <h1 class="home__tile maroonText">
+                    About Us
+                </h1>
+
+                <p class="home__decription">
+                    Every family has their own traditional dishes passed down from generation to generation. That's why
+                    it's so important to have a family-owned and operated restaurant where you can enjoy the taste of
+                    authentic Vietnamese cuisine.
+
+                    At Pho Gia Long, you can find traditional Vietnamese food that is both delicious and healthy. We
+                    believe that cooking with love makes all the difference and we give our customers nothing less than
+                    our best! We take pride in our traditional Vietnamese cuisine that is served with fresh ingredients
+                    and vegetarian and gluten free options. Our delicious menu will leave you feeling satisfied, whether
+                    you are coming into our restaurant or ordering online. We offer online ordering services or dine-in
+                    at our cozy location on Katella.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--LOCATION-->
+    <section class="home__section" id="location">
+        <div class="container d-flex flex-wrap gap100px locationBackground p-3 justify-content-center align-items-center">
+            <div class="home__data">
+                <h1 class="home__tile maroonText">
+                    Visit Us!
+                </h1>
+
+                <p class="home__decription">
+                    We are loctated at <span class="maroonText"> 211 W Katella Ave # A, Orange, CA 92867 </span>
+                    <br>
+                    <br>
+                    We're Open Mon-Sat 10 AM - 8:30PM
+                    <br>
+                    Closed on Sunday
+                    <br>
+                    <br>
+                    Phone Number: (714) 602-7665
+                </p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.110287348154!2d-117.85746008859908!3d33.80946687313772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd7e6453adee3%3A0xa492a369434fdde7!2sPho%20Gia%20Long!5e0!3m2!1sen!2sus!4v1682697110894!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    <!--MENU-->
+    <section class="home__section" id="menu">
+        <div class="container d-flex flex-wrap">
+            <!--Top 5-->
+            <h3>Top 5</h3>
+            <div class="container d-flex justify-content-between flex-wrap mb-4">
+                <div class="topBox">
+                    <div><img src="{{url_for('static', filename ='/img/egg_rolls.jpg')}}" alt="" class="topImg"></div>
+                    <p>Egg Rolls</p>
+                </div>
+                <div class="topBox">
+                    <div><img src="{{url_for('static', filename ='/img/spring_rolls.png')}}" alt="" class="topImg"></div>
+                    <p>Spring Rolls</p>
+                </div>
+                <div class="topBox">
+                    <div><img src="{{url_for('static', filename ='/img/the_combo.png')}}" alt="" class="topImg"></div>
+                    <p>The Combo</p>
+                </div>
+                <div class="topBox">
+                    <div><img src="{{url_for('static', filename ='/img/chicken.png')}}" alt="" class="topImg"></div>
+                    <p>Chicken Pho</p>
+                </div>
+                <div class="topBox">
+                    <div><img src="{{url_for('static', filename ='/img/porkchop.png')}}" alt="" class="topImg"></div>
+                    <p>Rice with Porkchop</p>
+                </div>
+            </div>
+            <!--for loop for category-->
+            {%for category in catergories_list%}
+            <div class="container-sm m-2">
+                <h3 class="border-bottom borderColorMaroon maroonText">{{category['name']}}</h3>
+                <div>
+                    {%for item in items_list%}
+                    {%if item['category_id'] == category['id'] %}
+                    <div class="d-flex box">
+                        <p class="ms-4 maroonText">
+                            <span hidden>{{item['id']}}</span>
+                            <span hidden>{{item['category_id']}}</span>
+                            <span class="greyText">{{item['name']}}</span> ........
+                            <span>{{item['price']}}</span>
+                        </p>
+                    </div>
+                    {%endif%}
+                    {%endfor%}
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </section>
+    <!--END BANNER-->
+
+
+    <img src="{{url_for('static', filename ='/img/star_anise.png')}}" alt="" class="star_anise">
+    <img src="{{url_for('static', filename ='/img/oregano.png')}}" alt="" class="oregano">
+    <img src="{{url_for('static', filename ='/img/clove.png')}}" alt="" class="clove">
+    <img src="{{url_for('static', filename ='/img/buu_dien.png')}}" alt="" class="buu_dien">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <script src="{{url_for('static', filename ='/js/script.js')}}"></script>
+</body>
+
+</html>
